@@ -3,6 +3,9 @@ Responsive page made for WDAI course.
 Page features "reciepies" from 1410 A.D.
 You can add new recipe, it will be shown as last elemnt in list and only saved in memory.
 
+## Demo
+https://ostatni5.github.io/Recipes-1410/
+
 ## Preview 
 ### Full Page
 ![obraz](https://user-images.githubusercontent.com/26521377/167248185-0435135b-1ac3-423b-b657-d17a3b33c3a7.png)
