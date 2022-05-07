@@ -1,0 +1,63 @@
+@mixin media-breakpoint($breakpoint) {
+    @if $breakpoint == "xs" {
+        @media (max-width: 575px) {
+            @content;
+        }
+    }
+
+     @else if $breakpoint == "sm" {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "smland" {
+        @media (max-width: 767px) and (orientation: landscape) {  //991px
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "sm-md" {
+        @media (min-width: 576px) and (max-width: 767px) {
+            @content;
+        }
+    }
+     @else if $breakpoint == "md" {
+        @media (max-width: 1015px) { //991px
+            @content;
+        }
+    }
+    @else if $breakpoint == "mdport" {
+        @media (max-width: 1015px) and (orientation: portrait) {  //991px
+            @content;
+        }
+    }
+    @else if $breakpoint == "md-lg" {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "lg" {
+        @media (max-width: 1199px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint == "lg-xl" {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @else if $breakpoint == "xl" {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+    @else {
+        @media (max-width: $breakpoint) {
+            @content;
+        }
+    }
+
+}
+    
